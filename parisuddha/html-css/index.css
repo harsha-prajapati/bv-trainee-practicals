@@ -1,0 +1,95 @@
+html{
+    width:100%;
+    background-color: rgb(108, 146, 108);
+}
+body{
+    background-color:wheat;
+    margin: 20px;
+}
+header{
+    color: darkgreen;
+    padding: 10px;
+}
+.content-area{
+    border-top: 2px solid black;
+}
+.main-area{
+    background-color: bisque;
+}
+.site-nav ul{
+    
+}
+.side-bar{
+    background-color: burlywood;
+}
+.site-nav li{
+    list-style: none;
+    color: brown;
+    float: left;
+    margin: 0;
+}
+.site-nav a{
+    text-decoration: none;
+    border: 2px solid grey;
+    margin-right: 10px;
+
+}
+.image-banner{
+    position: relative;
+}
+.image-banner img {
+    display: block;
+}
+.banner-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    background-color: darkolivegreen;
+    border-radius: 25px;
+    width: auto;
+}
+img{
+    
+    max-width: 100%;
+    height: auto;
+
+}
+.site-nav ul {
+    text-decoration: none;
+    
+}
+.content-area{
+    background-color: #ffffff;
+    margin-left: 10px;
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+    margin-top:10px ;
+}
+.main-area{
+    width: 64%;
+    float: left;
+    padding: 10px ;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.side-bar{
+    width: 34%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
