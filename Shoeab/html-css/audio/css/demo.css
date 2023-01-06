@@ -1,0 +1,68 @@
+html{
+    background-color: gray;
+}
+body{
+    font-family:Tahoma, sans-serif;
+    font-size: smaller;
+}
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    
+
+    
+}
+.content-area{
+    padding: 30px;
+    border-bottom: 3px solid green;
+
+    
+    
+}
+.main-area{
+    width: 66%;
+    float: left;
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+.sidebar{
+    width: 34%;
+    float: left;
+    background-color: lightgreen;
+    margin-bottom: 20px;
+}
+.site-nav li{
+    list-style:none;
+    float: left;
+}
+.site-nav a{
+    display: block;
+    color: green;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid lightcoral;
+    margin-bottom: 50px;
+}
+header h1{
+    margin: 0px;
+    font-size: 165%;
+    font-weight: normal;
+}
+header p{
+    margin: 0px;
+}
+header{
+    padding: 20px;
+    color:green;
+}
+footer{
+    padding-top: 20px;
+    text-align: center;
+    color:gray;
+    border-bottom: 3px solid red;
+}

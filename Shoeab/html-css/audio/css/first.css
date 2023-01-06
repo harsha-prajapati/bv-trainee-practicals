@@ -1,0 +1,12 @@
+h1{
+    color: rgb(32, 55, 185);
+    text-align: center;
+    background-color: chocolate;
+}
+p{
+    color: white;
+    background-color: blueviolet;
+}
+body{
+    background-color: cadetblue;
+}
