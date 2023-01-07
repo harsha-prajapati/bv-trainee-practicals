@@ -1,0 +1,15 @@
+h1{
+    color:blueviolet;
+}
+footer h1{
+    color:tomato;
+}
+p{
+    color:palevioletred;
+}
+header p{
+    color: springgreen;
+}
+footer h1 span{
+    color: saddlebrown;
+}
