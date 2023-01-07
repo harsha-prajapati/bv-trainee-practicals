@@ -1,0 +1,136 @@
+html{
+    width:100%;
+    background-color: rgb(108, 146, 108);
+}
+body{
+    background-color:whitesmoke;
+    margin: 40px;
+}
+header{
+    color: darkgreen;
+    padding: 10px;
+}
+header p{
+    color: blue;
+}
+.content-area{
+    border-top: 2px solid black;
+    margin: 10px;
+}
+.main-area{
+    background-color: bisque;
+
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.side-bar{
+    background-color: burlywood;
+}
+.site-nav li{
+    list-style: none;
+    color: brown;
+    float: left;
+    margin: 0;
+}
+.site-nav a{
+    text-decoration: none;
+    border: 2px solid grey;
+    margin-right: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+
+}
+.image-banner{
+    position: relative;
+}
+.image-banner img {
+    
+    width: 62%;
+    margin-left: 25px;
+    box-sizing: border-box;
+}
+.banner-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: darkolivegreen;
+    margin-left: 25px;
+    padding-right: 305px;
+    max-width:62%;
+    
+}
+img{
+    display: block;
+    width: 62%;
+    height: auto;
+
+}
+.site-nav ul {
+    text-decoration: none;
+    
+}
+.content-area{
+    background-color: #ffffff;
+    margin-left: 10px;
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+    margin-top:10px ;
+}
+.main-area{
+    width: 64%;
+    float: left;
+    padding: 10px ;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.side-bar{
+    width: 34%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+table{
+    margin: 25px;
+    width:50%;
+    border:2px solid green ;
+}
+table thead th:nth-child(even){
+    background-color: blue;
+    color: aquamarine;
+    text-align: center;
+}
+table tr:nth-child(2),
+table tr:nth-child(3)
+{
+    background-color:lightsalmon;
+    color:black;
+    
+
+}
+
+table th,
+td{
+   
+    border: 1px solid darkgreen;
+    padding: 10px;
+    width: 20%;
+}
+tr :hover{
+    background-color: aqua;
+}
