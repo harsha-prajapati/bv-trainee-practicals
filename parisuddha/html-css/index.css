@@ -3,21 +3,27 @@ html{
     background-color: rgb(108, 146, 108);
 }
 body{
-    background-color:wheat;
-    margin: 20px;
+    background-color:whitesmoke;
+    margin: 40px;
 }
 header{
     color: darkgreen;
     padding: 10px;
 }
+header p{
+    color: blue;
+}
 .content-area{
     border-top: 2px solid black;
+    margin: 10px;
 }
 .main-area{
     background-color: bisque;
+
 }
 .site-nav ul{
-    
+    margin: 0;
+    padding: 0;
 }
 .side-bar{
     background-color: burlywood;
@@ -32,26 +38,32 @@ header{
     text-decoration: none;
     border: 2px solid grey;
     margin-right: 10px;
+    background-color: aliceblue;
+    padding: 10px;
 
 }
 .image-banner{
     position: relative;
 }
 .image-banner img {
-    display: block;
+    
+    width: 62%;
+    margin-left: 25px;
+    box-sizing: border-box;
 }
 .banner-desc{
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 5px 10px;
     background-color: darkolivegreen;
-    border-radius: 25px;
-    width: auto;
+    margin-left: 25px;
+    padding-right: 305px;
+    max-width:62%;
+    
 }
 img{
-    
-    max-width: 100%;
+    display: block;
+    width: 62%;
     height: auto;
 
 }
@@ -92,4 +104,33 @@ footer{
 }
 .group{
     zoom: 1;
+}
+table{
+    margin: 25px;
+    width:50%;
+    border:2px solid green ;
+}
+table thead th:nth-child(even){
+    background-color: blue;
+    color: aquamarine;
+    text-align: center;
+}
+table tr:nth-child(2),
+table tr:nth-child(3)
+{
+    background-color:lightsalmon;
+    color:black;
+    
+
+}
+
+table th,
+td{
+   
+    border: 1px solid darkgreen;
+    padding: 10px;
+    width: 20%;
+}
+tr :hover{
+    background-color: aqua;
 }
