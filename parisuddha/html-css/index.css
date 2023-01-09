@@ -27,6 +27,7 @@ header p{
 }
 .side-bar{
     background-color: burlywood;
+    background-image: linear-gradient(to bottom,orange,white,blue,green);
 }
 .site-nav li{
     list-style: none;
@@ -57,8 +58,8 @@ header p{
     left: 0;
     background-color: darkolivegreen;
     margin-left: 25px;
-    padding-right: 280px;
-    max-width:60%;
+    padding-right: 250px;
+    max-width:50%;
     
 }
 img{
@@ -109,19 +110,26 @@ table{
     margin: 25px;
     width:50%;
     border:2px solid green ;
+    border-collapse: collapse;
+   
 }
 table thead th:nth-child(even){
     background-color: blue;
     color: aquamarine;
     text-align: center;
 }
-table tr:nth-child(2),
-table tr:nth-child(3)
+table th:nth-child(2),
+table th:nth-child(3)
 {
     background-color:lightsalmon;
     color:black;
     
 
+}
+
+table td:nth-child(2),
+table td:nth-child(3){
+    text-align: center;
 }
 
 table th,
