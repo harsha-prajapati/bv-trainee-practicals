@@ -79,6 +79,8 @@ footer {
     padding: 20px 40px;
     box-sizing: border-box;
     font-size: 85%;
+    margin-bottom: 33px;
+    background-image: linear-gradient(to bottom, rgb(163, 167, 161), #ffffff);
 
 
 }
@@ -123,6 +125,7 @@ form {
     background-color: rgb(185, 173, 173);
     padding: 30px 40px;
     margin-top: 3px;
+    box-sizing: border-box;
     
 }
 
@@ -179,4 +182,51 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
     border: 2px solid #535e3b;
     background-color: #798a56
+}
+
+table {
+    width: 50%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+}
+
+.col-item {
+    width: 60%;
+}
+
+.col-qty,
+.col-price {
+    width: 20%;
+} 
+
+table th {
+    text-align: left;
+    background-color: teal;
+    color: #ffffff;
+
+}
+
+table th,
+table td {
+  border: 1px solid teal;
+  padding: 10px;
+}
+
+table th:nth-child(2),
+table th:nth-child(3){
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: rgb(163, 219, 219);
+}
+
+table tbody tr:hover td {
+    background-color: lavender;
+}
+
+tbody td:nth-child(2),
+tbody td:nth-child(3){
+    text-align: center;
 }
