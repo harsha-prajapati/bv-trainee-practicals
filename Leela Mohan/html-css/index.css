@@ -118,3 +118,65 @@ img {
     background-color: rgba(0, 0, 0, .65);
     color: #ffffff;
 }
+
+form {
+    background-color: rgb(185, 173, 173);
+    padding: 30px 40px;
+    margin-top: 3px;
+    
+}
+
+input[type="email"],
+input[type ="password"],
+select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input, select {
+    font-family: sans-serif;
+    font-size: 100%;
+
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #869960;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #798a56;
+    outline: none;
+}
+
+.hide-label {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-label {
+    color: rgb(65, 57, 57);
+    font-size: 85%;
+}
+
+input[type="email"]:focus,
+input[type ="password"]:focus {
+    border: 3px solid #869960;
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, .35);
+} 
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 2px solid #535e3b;
+    background-color: #798a56
+}
