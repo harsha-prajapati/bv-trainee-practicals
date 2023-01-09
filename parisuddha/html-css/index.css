@@ -57,8 +57,8 @@ header p{
     left: 0;
     background-color: darkolivegreen;
     margin-left: 25px;
-    padding-right: 305px;
-    max-width:62%;
+    padding-right: 280px;
+    max-width:60%;
     
 }
 img{
@@ -133,4 +133,44 @@ td{
 }
 tr :hover{
     background-color: aqua;
+}
+/*form styling*/
+
+form{
+    background-color: rgb(179, 154, 154);
+    padding: 10px;
+    width: 50%;
+    margin: 20px;
+    
+}
+
+.hidden-label{
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+input[type="email"],
+input[type="password"],
+select{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid green;
+    background-color: bisque;
+    height: 35px;
+}
+input[type="submit"]{
+    width: 100%;
+    display: block;
+    background-color:goldenrod;
+    color: black;
+    height: 40px;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    background-color: aquamarine;
+    border:1px solid blueviolet;
 }
