@@ -29,6 +29,14 @@ nav li{
   
     
 }
+/* @media  screen and (max-width:700px) {
+    .nav element {
+        display: flex;
+        flex-direction: column;
+    }
+    }  */
+    
+
 nav  a{
     /* text-decoration: none;
     border: 1px solid rgb(226, 226, 240);
@@ -102,16 +110,23 @@ img{
     position: relative;
     top: 15px;
     left: 5px;
+    overflow: hidden;
+
 }
 .banner-description{
     position: absolute;
     bottom:3px;
     left: 70px;
-    color: rgb(86, 87, 85);
-    font-style: italic;
-
-    
+    color: rgb(17, 19, 16);
+    font-style: italic; 
+    transform: translateY(100%);
+    transition-property: all;
+    transition-duration: 2s;
 }
+.img-banner:hover .banner-description{
+   transform: translateY(0%);
+}
+
 /* table styling */
 .table-main{
     margin-left: 32px ;
