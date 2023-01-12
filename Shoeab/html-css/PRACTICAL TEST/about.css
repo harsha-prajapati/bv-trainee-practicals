@@ -1,0 +1,36 @@
+
+body h1{
+    color: magenta;
+    background-color: beige;
+    text-align: center;
+   
+}
+header h1{
+    color: darkblue;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+header p{
+    color: tomato;
+    border-bottom: 2px solid;
+}
+
+.highlights{
+    color: rgb(185, 63, 196);
+}
+.highlights span{
+    color: burlywood;
+}
+.container
+{
+    
+    border-bottom: 2px solid;
+}
+footer{
+    text-align: center;
+    color: darkred;
+}
+footer p span{
+    color: darkred;
+    background-color: darkgrey;
+}

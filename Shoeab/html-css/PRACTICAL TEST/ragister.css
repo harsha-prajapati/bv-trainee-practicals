@@ -1,0 +1,35 @@
+input[type="email"]
+
+{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family:Tahoma, sans-serif;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+input[type="submit"]
+{
+    width: 100%;
+    background-color: green;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0;
+    border: 1px solid green;}
+form{
+    background-color:lightgray;
+    padding: 30px 40px;
+}
+.hidden-label{
+    position: absolute;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+footer{
+    text-align: center;
+}
+

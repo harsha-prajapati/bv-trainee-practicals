@@ -1,0 +1,110 @@
+body
+{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 70px;
+    
+    
+}
+.logo{
+    text-align: center;
+}
+
+header{
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(green, yellow);
+
+}
+.navbar{
+    display: flex;
+    background-image: linear-gradient(green,pink);
+
+
+}
+.navbar ul{
+    list-style: none;
+    width: 55%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+   text-align: right;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    
+    
+
+}
+.navbar ul li{
+    border: 2px solid green;
+    padding: 15px;
+   color: inherit;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: inherit;
+}
+.image{
+    background-size: cover;
+}
+.image h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.img-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    
+}
+.single{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+
+    
+
+}
+.navbar ul li a:hover{
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    border-top: 5px solid gray;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+
+
+.container{
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+
+.image1{
+    width: 80%;
+}
+.image{
+    width: 100%;
+}
