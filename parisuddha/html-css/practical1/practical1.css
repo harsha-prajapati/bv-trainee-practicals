@@ -1,0 +1,52 @@
+header{
+    margin: 10px;
+}
+body{
+    padding: 10px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.footer-sec{
+    border-top: 2px solid black;
+    padding: 10px;
+    
+}
+h5{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline;
+}
+.carousel-item p{
+    color: black;
+    font-size: large;
+}
+
+form{
+    display: block;
+    background-color: burlywood;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 80vh;
+    
+}
+.image{
+    height: 300px;
+    width: 300px;
+}
+.submit{
+    background-color: green;
+}
+h1{
+    color: blue;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+p{
+    color: black;
+    font-style: italic;
+    padding: 10px;
+}
