@@ -6,6 +6,9 @@
    display: flex;
    
 }
+.main{
+    background-image: linear-gradient( to top,rgb(231, 41, 41),rgb(132, 189, 41));
+}
 .main-col{
     flex: 1;
     order: 2;

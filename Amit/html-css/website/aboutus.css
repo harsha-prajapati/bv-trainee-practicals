@@ -79,3 +79,8 @@
     animation-duration: 3s;
 
 }
+.footer{
+    /* border-top: 1px solid black; */
+    text-align: center;
+    background-color: #9a9f95;
+}
