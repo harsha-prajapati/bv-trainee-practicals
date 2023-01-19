@@ -251,3 +251,122 @@ Test data: 125, 555 and 44 */
 //   : console.log(
 //       `John's BMI(${john.bmi})is higher than Marks BMI(${mark.bmi}) `
 //     );
+// for Loop
+
+// for (let x = 1; x <= 10; x++) {
+//   console.log(`This is test ${x}`);
+// }
+//for loop in array
+// const hello = ["peter", "james", 2023, ["mike", "steven"]];
+// let types = [];
+
+// for (let i = 0; i < hello.length; i++) {
+//   console.log(hello[i]);
+//   types[i] = typeof hello[i];
+// }
+// console.log(types);
+
+// let a = ["h", "e", "l", "l", "o"];
+// let b = ["y", "e", "l", "l"];
+// let matched = [];
+// for (let i = 0; i < a.length; i++) {
+//   for (let j = 0; j < b.length; j++) console.log(matched);
+// }
+
+// iteration using back
+// const hello = ["peter", "james", 2023, ["mike", "steven"]];
+// for (let i = hello.length; i >= 0; i--) {
+//   console.log(hello[i], i);
+// }
+
+// for (let i of hello) {
+//   console.log(i);
+// }
+
+// for in for
+// for (let room = 1; room < 4; room++) {
+//   console.log(`This is room ${room}`);
+//   for (let mem = 1; mem < 6; mem++) {
+//     console.log(`i m member${mem}`);
+//   }
+// }
+
+//while loop
+// let rep = 0;
+// while (rep <= 10) {
+//   console.log(`this is test${rep}`);
+//   rep++;
+// }
+/*Coding Challenge #4
+Let's improve Steven's tip calculator even more, this time using loops!
+Your tasks:
+1. Create an array 'bills' containing all 10 test bill values
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate
+tips and total values (bill + tip) for every bill value in the bills array. Use a for
+loop to perform the 10 calculations!
+Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
+tips and totals arrays 😉
+Bonus:
+4. Bonus: Write a function 'calcAverage' which takes an array called 'arr' as
+an argument. This function calculates the average of all numbers in the given
+array. This is a difficult challenge (we haven't done this before)! Here is how to
+solve it:
+4.1.
+First, you will need to add up all values in the array. To do the addition,
+start by creating a variable 'sum' that starts at 0. Then loop over the
+array using a for loop. In each iteration, add the current value to the
+'sum' variable. This way, by the end of the loop, you have all values
+added together
+4.2.
+To calculate the average, divide the sum you calculated before by the
+length of the array (because that's the number of elements)
+4.3.
+Call the function with the 'totals' array*/
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// let tips = [];
+// let total = [];
+// const calcTip = (billValue) => {
+//   if (300 > billValue > 50) {
+//     return billValue * 0.15;
+//   } else {
+//     return billValue * 0.2;
+//   }
+// };
+// for (let i = 0; i < bills.length; i++) {
+//   //   console.log(`${bills[i]}`);
+
+//   // console.log(bills);
+//   tips = calcTip(bills[i]);
+//   //   console.log(tips);
+//   //
+//   //   console.log(tips);
+//   total = bills[i] + tips;
+//   console.log(total);
+// }
+
+// Developer Skills & Editor Setup
+// Coding Challenge #1
+// Given an array of forecasted maximum temperatures, the thermometer displays a
+// string with the given temperatures. Example: [17, 21, 23] will print "... 17ºC in 1
+// days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+// Your tasks:
+// 1. Create a function 'printForecast' which takes in an array 'arr' and logs a
+// string like the above to the console. Try it with both test datasets.
+// 2. Use the problem-solving framework: Understand the problem and break it up
+// into sub-problems!
+// Test data:
+// § Data 1: [17, 21, 23]
+// § Data 2: [12, 5, -5, 0, 4]
+const data1 = [17, 21, 23];
+
+const printForecast = (arr) => {
+  let str = " ";
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]} c in ${i + 1} days ... `;
+  }
+  console.log("..." + str);
+};
+printForecast(data1);
