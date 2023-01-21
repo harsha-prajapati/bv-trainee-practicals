@@ -5,30 +5,30 @@ const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
-const restaurant = {
-  name1: 'Classico Italiano',
-  location1: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  order: function (input1, input2) {
-    return [this.starterMenu[input1], this.starterMenu[input2]];
-  },
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
-};
+// const restaurant = {
+//   name1: 'Classico Italiano',
+//   location1: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['pizza', 'Pasta', 'Risotto'],
+//   order: function (input1, input2) {
+//     return [this.starterMenu[input1], this.starterMenu[input2]];
+//   },
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0, // Open 24 hours
+//       close: 24,
+//     },
+//   },
+// };
 
 //Array Destructing
 // const num = [1, 2, 3, 4, 5];
@@ -191,10 +191,10 @@ const game = {
 // console.log(players1);
 // const players2 = [game.players[1]];
 // console.log(players2);
-const [...players1] = game.players[0];
-console.log(players1);
-const [...players2] = game.players[1];
-console.log(players2);
+// const [...players1] = game.players[0];
+// console.log(players1);
+// const [...players2] = game.players[1];
+// console.log(players2);
 
 // stp 2
 //goalkeeper gk
@@ -203,36 +203,134 @@ console.log(players2);
 // goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10
 // field players
 
-const [gk1, ...fieldPlayers1] = players1;
-// console.log(gk1, fieldPlayers1);
-const [gk2, ...fieldPlayers2] = players2;
-// console.log(gk2, fieldPlayers2);
-// 3. Create an array 'allPlayers' containing all players of both teams (22
-// players)
-const allPlayers = [...players1, ...players2];
-console.log(allPlayers);
-// 4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a
-// new array ('players1Final') containing all the original team1 players plus
-// 'Thiago', 'Coutinho' and 'Perisic'
-const players1Final = ['Thiago', 'Coutinho', 'Perisic', ...players1];
-console.log(players1Final);
-// 5. Based on the game.odds object, create one variable for each odd (called
-// 'team1', 'draw' and 'team2')
-const team1 = game.odds.team1;
-const draw = game.odds.x;
-const team2 = game.odds.team2;
-console.log(team1, draw, team2);
-// 6. Write a function ('printGoals') that receives an arbitrary number of player
-// names (not an array) and prints each of them to the console, along with the
-// number of goals that were scored in total (number of player names passed in)
-const printGoals = function (...players) {
-  console.log(`${players.length} goals were scored`);
+// const [gk1, ...fieldPlayers1] = players1;
+// // console.log(gk1, fieldPlayers1);
+// const [gk2, ...fieldPlayers2] = players2;
+// // console.log(gk2, fieldPlayers2);
+// // 3. Create an array 'allPlayers' containing all players of both teams (22
+// // players)
+// const allPlayers = [...players1, ...players2];
+// console.log(allPlayers);
+// // 4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a
+// // new array ('players1Final') containing all the original team1 players plus
+// // 'Thiago', 'Coutinho' and 'Perisic'
+// const players1Final = ['Thiago', 'Coutinho', 'Perisic', ...players1];
+// console.log(players1Final);
+// // 5. Based on the game.odds object, create one variable for each odd (called
+// // 'team1', 'draw' and 'team2')
+// const team1 = game.odds.team1;
+// const draw = game.odds.x;
+// const team2 = game.odds.team2;
+// console.log(team1, draw, team2);
+// // 6. Write a function ('printGoals') that receives an arbitrary number of player
+// // names (not an array) and prints each of them to the console, along with the
+// // number of goals that were scored in total (number of player names passed in)
+// const printGoals = function (...players) {
+//   console.log(`${players.length} goals were scored`);
+// };
+
+// printGoals(...game.scored);
+
+// // 7. The team with the lower odd is more likely to win. Print to the console which
+// // team is more likely to win, without using an if/else statement or the ternary
+// // operator.
+// team1 < team2 && console.log('team 1 wins');
+// team1 > team2 && console.log('team 2 wins');
+
+//to access all the items of restuaurnt menu and starter menu we need to access it in a const menu
+
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(menu);
+
+//to access all the items of the menu item we need to make use of for loop
+// for (const items of menu.entries()) console.log(items);
+//without optinal chaaining
+// console.log(restaurant.mainMenu.starter.hello); //This will throw an error bcz there is no such element in this
+
+// so to check it whether is it or not we can use this optinal chaining
+//with optinal chaining
+// console.log(restaurant.mainMenu.starter?.hello); //now it will return undefined in the console.log
+
+//Loop over objects property names
+const restaurant = {
+  name1: 'Classico Italiano',
+  location1: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['pizza', 'Pasta', 'Risotto'],
+  order: function (input1, input2) {
+    return [this.starterMenu[input1], this.starterMenu[input2]];
+  },
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
 };
+//to access the values of the object restaurant
 
-printGoals(...game.scored);
+// // for (const days of Object.keys(openingHours)) {
+// //   console.log(openingHours);
+// }
+// for (const time of Object.values(restaurant.openingHours)) console.log(time);
+//to access the keys of the object restaurant
+// for (const day of Object.keys(restaurant.openingHours)) console.log(day);
 
-// 7. The team with the lower odd is more likely to win. Print to the console which
-// team is more likely to win, without using an if/else statement or the ternary
-// operator.
-team1 < team2 && console.log('team 1 wins');
-team1 > team2 && console.log('team 2 wins');
+// const properties = Object.keys(restaurant.openingHours);
+// const days = Object.values(restaurant.openingHours);
+// console.log(properties, days);
+
+//Sets
+const order = new Set(['pizza', 23, 'kmnu', 'dhokla', 'pizza']);
+// console.log(new Set('Jonas'));
+// console.log(order.size); //to check the size of the set
+// console.log(order.has('pizza')); //This will check that if our set has the following
+// order.add('garlic bread');
+// console.log(order);
+// order.delete('pasta');
+// console.log(order);
+// order.clear();
+// for (const orderSet of order) console.log(typeof orderSet);
+// for (const orderSet of order) console.log(orderSet); //this will
+
+///MAp
+// const rest = new Map();
+// rest.set('1', 'Amit');
+// rest.set('2', 'pavan');
+// console.log(rest);
+
+// Revision
+
+// Array
+
+const a = ['code', 'eat', 'read']; //used to storage simple data
+
+//Sets
+const task = new Set(['code', 'eat', 'repeat', 'code']); //GENERALLY USED FOR UNIQUE VALUES AND ALSO USED TO RMEOVE THE REPEATED VALUES FROM  OUR DATA
+
+//OBJECT
+const tasks = {
+  name1: 'Amit',
+  age: 25,
+  lastName: 'Chaudhary',
+  fathersName: 'Birendra',
+};
+//generally used when we need value and key pair
+//Map
+const taskNew = new Map([
+  ['Name', 'Amit'],
+  ['age', 25],
+  ['lastName', 'Chaudhary'],
+  ['fathersName', 'Birendra'],
+  [false, 'Start the Work'],
+]);
+//here we can havae any type of key here...use Maps() when u need the keys which r not Strings
