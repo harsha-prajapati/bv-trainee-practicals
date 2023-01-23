@@ -25,3 +25,7 @@ console.log(data);
 const arr = ["hi", "hello", "good"];
 const print = [...new Set(arr)];
 console.log(print);
+
+//slice
+const datas = "hello india";
+console.log(datas.slice(-1));
