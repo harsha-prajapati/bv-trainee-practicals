@@ -1,0 +1,110 @@
+.feature-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.feature-title {
+    color: #12022f;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.feature-details {
+    margin-left: 20px;
+}
+
+.feature-icon {
+    width: 40px;
+}
+
+.feature-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.features-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .features-container {
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+}
+
+.heading {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.design-develop-content {
+    padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .design-develop-content {
+        width: 60%;
+        max-width: 700px;
+
+    }
+}
+
+.bulb-icon {
+    width: 84px;
+    height: 84px;
+}
+
+@media screen and (min-width: 768px) {
+    .bulb-icon {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+.image-container {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/design-section-sm-bg.png");
+    min-height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .image-container {
+        width: 40%;
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/design-section-lg-bg.png");
+    }
+}
+
+
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #12022f;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-container {
+        flex-direction: row;
+    }
+}
