@@ -1,13 +1,17 @@
+/* head section*/
 header{
     margin: 10px;
-}
-body{
-    padding: 10px;
 }
 .logo{
     height: 50px;
     width: 50px;
 }
+/* bodysection*/
+body{
+    padding: 20px;
+}
+
+/* footer section*/
 .footer-sec{
     border-top: 2px solid black;
     padding: 10px;
@@ -23,30 +27,38 @@ h5{
     color: black;
     font-size: large;
 }
-
+/*form section*/
 form{
     display: block;
-    background-color: burlywood;
     padding: 20px;
     margin-bottom: 10px;
-    height: 80vh;
-    
+    text-align: center;
+    color: white;
 }
 .image{
     height: 300px;
     width: 300px;
 }
-.submit{
+.submit:hover{
     background-color: green;
+    border-radius: 10px;
+    border-color: blueviolet;
 }
 h1{
     color: blue;
     font-weight: 500;
     font-size: 40px;
     padding-bottom: 20px;
+    margin: 10px;
 }
 p{
-    color: black;
+    color:black;
     font-style: italic;
     padding: 10px;
+}
+.image:hover{
+transform: rotate(2deg);
+height: 350px;
+width: 350px;
+transform: skewX(2);
 }
