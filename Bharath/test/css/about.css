@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0, 8, 241, 0.11),rgba(0, 128, 255, 0.11),rgba(7, 255, 118, 0.2));
+    font-family: 'Times New Roman', Times, serif; 
+    padding: 20px;
+}
+p{
+    font-family:"Roboto";
+}
+button {
+    height: 40px;
+    width:90px;
+    background-color:rgb(13, 143, 230);
+    border-radius: 8px;
+    color:#ffffff;
+    border-width:0px;
+    box-shadow: 6px 10px 5px rgba(151, 147, 147, 0.8);
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}

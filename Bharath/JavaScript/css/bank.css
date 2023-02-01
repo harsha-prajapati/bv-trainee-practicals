@@ -1,0 +1,15 @@
+body{
+    padding: 100px;
+}
+#history{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    background-color: aqua;
+    width: 90%; 
+    
+}
+#history div{
+    display: flex;
+}

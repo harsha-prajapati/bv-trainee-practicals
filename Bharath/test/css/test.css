@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    margin: 0px;
+}
+.bg-container{
+  
+ 
+    width: 100%;
+}
+/* nav bar start */ 
+.header{
+    width: 100%;
+}
+.logo{
+    width: 50px;
+   
+    height: 50px;
+}
+.nav-bar{
+    background-color: black;
+}
+
+
+/*  nav bar end */  
+h1{
+    font-size: 28px;
+}
+img{
+    height: 180px;
+    width: 100%;
+    border-radius: 0px 6px 0px 9px;
+    margin: 5px;
+}
+.images-block{
+    padding:10px;
+}
+.images-block{
+    height: 80vh;
+    overflow-y: auto;
+}
+.footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(129, 138, 138);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.01); 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0); 
+    border-radius: 10px;
+  }
+  
+ 
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.1); 
+  }

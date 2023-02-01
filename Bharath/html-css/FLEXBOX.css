@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-conatiner {
+    display: flex;
+    height: 100vh;
+ 
+}
+
+.sidebar {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    background-color: #002159;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Open Sans";
+}
+
+
+.option{
+    display:flex;
+    align-items: center;
+}
+.option1 {
+    padding: 20px;
+    font-size: 20px;
+}
+.option1:hover{
+    background-color: #296eff;
+    border-radius: 8px;
+}
+
+.option2 {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+   
+}
+.option2:hover{
+    background-color: #296eff;
+}
+
+.image {
+    width: 30px;
+    border-radius: 25px;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-grow: 1;
+    font-family: "Open Sans";
+    overflow-y: auto;
+}
+
+
+.image11 {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.imgggg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

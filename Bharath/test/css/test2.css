@@ -1,0 +1,114 @@
+
+body{
+    margin:0px;
+    font-family: "Roboto";
+}
+
+.bg-constainer{
+    height: 100vh;
+    width: 100%;
+    background-color:#1bfdcc;
+    padding: 200px;
+    box-sizing: content-box;
+}
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+/* search bar start */ 
+.create-todo{
+    width: 80%;
+}
+h1{
+    font-size: 60px;
+    
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.addinput{
+    width: 250px;
+    height: 30px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: rgb(248, 248, 248);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.editinput{
+    width: 180px;
+    height: 28px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-right: 5px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-sr{
+    height: 34px;
+    width: 80px;
+    background-color: rgb(0, 217, 255);
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 6px;
+    box-shadow:4px 4px 8px 0px rgba(0, 0, 0, 0.2)
+}
+/* search bar end */ 
+
+
+.todo-list{
+    width: 80%;
+}
+form{
+    width: 100%;
+}
+.list-item{
+    height: 50px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: grey;
+   
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.todo-item{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    align-self:center;
+    border-width: 1px;
+    border-color: grey;
+    box-sizing: border-box;
+
+}
+.select-list{
+    border-width: 0px;
+    height: 30px;
+    background-color: rgba(0, 140, 255, 0.16);
+    color: #050505;
+    box-shadow:2px 2px 8px 0px rgba(0, 0, 0, 0.2)
+}
+   
+.delete{
+    background-color: rgba(255, 0, 0, 0.82);
+    border-width: 0px;
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+    color: #ffffff;
+    padding: 2px;
+    box-shadow:5px 6px 8px 1px rgba(0, 0, 0, 0.2)
+}
