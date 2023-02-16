@@ -1,12 +1,15 @@
-function add(input1, input2, typed) {
-    var result;
-    if ((typeof input1 === "number" && typeof input2 === "number") ||
-        typed === "as-number") {
-        result = +input1 + +input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
-}
-console.log(add(1, 2, "as-string"));
+// //Interface is similar to the class but its gives us the struture of the obejct to be made
+// //example
+// interface Person {
+//     name: string;
+//     age: number;
+var addfun;
+addfun = function (n1, n2) {
+    return n1 + n2;
+};
+console.log(addfun(2, 3));
+var subfun;
+subfun = function (n1, n2) {
+    return n1 - n2;
+};
+console.log(subfun(2, 5));
