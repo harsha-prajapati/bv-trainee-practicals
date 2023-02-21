@@ -19,14 +19,18 @@ const countriesContainer = document.querySelector(".countries");
 // };
 
 const renderCountry = function (data, className = "") {
+  console.log(data);
   const html = `
- 
+
   <article class="country ${className}">
-  <img class="country__img" src="${data.flag}" />
+  
+  <a href = "https://www.google.com/maps/place/${data.latlng}" target="_blank"> 
+  <img class="country__img" src="${data.flag}" /></a>
   <div class="country__data">
     <h3 class="country__name">${data.name}</h3>
+
     <h4 class="country__region">${data.region}</h4>
-    
+
     <p class="country__row"><span>👫</span>${(
       +data.population / 1000000
     ).toFixed(1)} people</p>
@@ -38,10 +42,11 @@ const renderCountry = function (data, className = "") {
     <h4 class="country__region"><span>NativeName : </span>${
       data.nativeName
     }</h4>
+
   </div>
 </article>
 `;
-
+  console.log(data);
   countriesContainer.insertAdjacentHTML("beforeend", html);
   countriesContainer.style.opacity = 1;
 };
@@ -80,15 +85,20 @@ const renderCountry = function (data, className = "") {
 const getCountryData = function (country) {
   fetch(`https://restcountries.com/v2/name/${country}`)
     .then((response) => response.json())
-    .then((data) => renderCountry(data[0]));
-  console.log(country);
+    .then((data) => {
+      renderCountry(data[0]);
+      console.log(country);
 
-  const neighbour = data[0].borders[1];
-  if (!neighbour) return;
+      const neighbour = data[0].borders[0];
+      if (!neighbour) return;
+      return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
+    })
+    .then((response) => response.json())
+    .then((data) => renderCountry(data, "neighbour"));
 };
-getCountryData("Paraguay");
+getCountryData("georgia");
 // getCountryNeighbour("Bharat");
-// getCountryData("germany");
+getCountryData("germany");
 // getCountryData("Marshall Islands");
 // getCountryData("USA");
 // getCountryData("Paraguay");
