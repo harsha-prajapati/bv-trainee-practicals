@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var superHeros = [];
 // const heroPower: number[] = []
 var heroPower = [];

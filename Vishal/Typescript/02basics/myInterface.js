@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var vishal = {
     dbId: 22,
     email: "v@v.com",
@@ -9,8 +11,6 @@ var vishal = {
     },
     getCoupon: function (name, off) {
         return 10;
-    }
+    },
 };
 vishal.email = "v@hv.com";
-// vishal.dbId = 55
-console.log(vishal.getCoupon.name);

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var score = [];
 var names = [];
 function identityOne(val) {
@@ -32,13 +32,13 @@ var getMoreSearchProducts = function (products) {
 function anotherFunction(valOne, valTwo) {
     return {
         valOne: valOne,
-        valTwo: valTwo
+        valTwo: valTwo,
     };
 }
 var Val = {
     name: "vishal",
     author: "vishal",
-    subject: "ts"
+    subject: "ts",
 };
 console.log(Val.subject);
 var Sellable = /** @class */ (function () {

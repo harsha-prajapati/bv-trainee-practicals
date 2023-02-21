@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Instagram = /** @class */ (function () {
     function Instagram(cameraMode, filter, burst) {
         this.cameraMode = cameraMode;
