@@ -1,0 +1,46 @@
+item;
+
+import React, { useState } from "react";
+import "./ExpenseItem.css";
+import ExpenceDate from "./ExpenseDate";
+
+const ExpenceItem = (props) => {
+  const [title, setTitle] = useState(props.title);
+  const [amount, setAmount] = useState(props.amount);
+  const [id, setId] = useState(props.id);
+
+  const handleClick = () => {
+    setTitle("New House");
+    setAmount(9876589);
+  };
+
+  const removeElement = (id) => {
+    // setId((current) => current.splice((id) => props.id !== id));
+    const list = id;
+    console.log(props.id);
+    list.splice(id, 1);
+
+    setId(list);
+  };
+
+  return (
+    <div className="expense-item">
+      <ExpenceDate date={props.date} />
+      <div className="expense-item__description">
+        <h2>{title}</h2>
+        <div className=" expense-item__price">${amount}</div>
+      </div>
+      <button onClick={handleClick}>Change Detail</button>
+
+      <button
+        type="button"
+        className="btn btn-danger"
+        onClick={() => removeElement(id)}
+      >
+        Delete
+      </button>
+    </div>
+  );
+};
+
+export default ExpenceItem;

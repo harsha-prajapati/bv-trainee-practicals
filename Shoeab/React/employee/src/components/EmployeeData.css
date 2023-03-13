@@ -1,0 +1,56 @@
+html{
+    background-color: lightslategray;
+}
+.container
+{
+    background-color:lightslategray;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 20px;
+
+}
+.list{
+    margin: 20px;
+    padding: 20px;
+
+}
+.name{
+    margin: 20px;
+}
+.username{
+    margin: 20px;
+}
+.age{
+    margin: 20px;
+}
+
+.list-elements{
+    margin: 20px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: lightslategray;
+    padding: 20px;
+    width: 200px;
+
+  
+
+}
+.button
+{
+    background-color: aquamarine;
+    color: black;
+    border-color: firebrick;
+}
+.employeeComponent
+{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    padding: 20px;
+}
+.heading
+{
+    background-color: lightgreen;
+    padding-left: 90px;
+}

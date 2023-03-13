@@ -1,0 +1,25 @@
+.card {
+  color: black;
+  background-color: rgb(228, 191, 143);
+  width: 15rem;
+  padding: 15px;
+  border-radius: 15px;
+
+  /* margin: 3rem auto; */
+  /* text-align: center; */
+  margin-top: 5px;
+}
+
+.card button {
+  background-color: rgb(124, 131, 131);
+  border: 0;
+  height: 30px;
+  border-radius: 5px;
+}
+.card button:hover {
+  background-color: rgb(113, 175, 175);
+}
+
+.name {
+  width: fit-content;
+}
