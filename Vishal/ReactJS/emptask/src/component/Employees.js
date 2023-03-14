@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Employedetail from "./Employedetail";
-
+//employes
 const Employees = () => {
   const [selectedEmployee, setSelectedEmployee] = useState();
 
