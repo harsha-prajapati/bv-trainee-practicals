@@ -1,9 +1,9 @@
-import SimpleInput from './components/SimpleInput';
+import AgeCalculator from "./components/AgeCaluculator";
 
 function App() {
   return (
-    <div className="app">
-      <SimpleInput />
+    <div >
+      <AgeCalculator />
     </div>
   );
 }
