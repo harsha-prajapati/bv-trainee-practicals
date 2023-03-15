@@ -1,0 +1,32 @@
+.headings
+{
+    background-color:darkslateblue;
+}
+.heading
+{
+    color: blue;
+    background-color: aqua;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.heading-1
+{
+    color: blue;
+    background-color:green;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.heading-2
+{
+    color: blue;
+    background-color:gray;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.heading-3
+{
+    color: blue;
+    background-color:lightcoral;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}

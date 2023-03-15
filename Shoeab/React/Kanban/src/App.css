@@ -1,0 +1,22 @@
+
+.App {
+  text-align: center;
+  background-color:rgb(88, 154, 110);
+}
+.addTaskContainer {
+  width: 30em;
+  margin-bottom: 2em;
+}
+.row {
+  margin-bottom: 0.5em;
+}
+ul {
+  list-style-type: none;
+} 
+.task {
+  border: 1px solid gray;
+  margin-bottom: 0.5em;
+}
+html{
+  background-color: aliceblue;
+}
